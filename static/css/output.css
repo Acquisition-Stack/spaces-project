@@ -205,9 +205,6 @@
   .flex-col {
     flex-direction: column;
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -276,10 +273,6 @@
   .font-header {
     font-family: var(--font-header);
   }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
   .text-8xl {
     font-size: var(--text-8xl);
     line-height: var(--tw-leading, var(--text-8xl--line-height));
@@ -287,9 +280,6 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
-  }
-  .text-neutral {
-    color: var(--color-neutral);
   }
   .text-primary {
     color: var(--color-primary);

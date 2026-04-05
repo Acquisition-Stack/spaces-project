@@ -6,4 +6,10 @@ post method. #} {% block content %}
   <img src="{{ url_for('static', filename='images/cafe-tokyo-night.png') }}" />
 </section>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    initYouTubePlayer();
+  });
+</script>
+
 {% endblock %}
