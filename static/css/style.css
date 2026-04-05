@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Header fonts */
+  --font-header: "Gabarito", sans-serif;
+  --font-body: "Nunito", sans-serif;
+
+  /* Primary (dark base) */
+  --color-primary: #2c1a0e;
+  --color-primary-dark: #5c3320;
+  --color-primary-mid: #7a5c3a;
+
+  /* Accent */
+  --color-accent: #c8860a;
+  --color-accent-light: #e8ab3a;
+  --color-accent-subtle: #f5d08a;
+
+  /* Neutrals */
+  --color-neutral: white;
+  --color-surface: #f5ecd7;
+  --color-surface-dark: #ede0cc;
+}

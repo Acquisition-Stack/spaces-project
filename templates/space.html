@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block title %}Coffee Spaces{% endblock %} {# Make
+the block title dynamic and make it the name of the room the click on. Use a
+post method. #} {% block content %}
+
+<section>
+  <img src="{{ url_for('static', filename='images/cafe-tokyo-night.png') }}" />
+</section>
+
+{% endblock %}

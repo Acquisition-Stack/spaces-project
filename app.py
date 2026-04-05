@@ -1,7 +1,16 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
-    return "<p>Welcome to Cafe Spaces</p>"
+def coffee_spaces():
+    return render_template("/index.html")
+
+        # REFACTOR
+    # You should make the amount of rooms dynamic later on. 
+    # Setup a struct and have the rooms appear dynamically.
+
+@app.route("/space")
+def tokyo_night():
+    return render_template("/space.html")
+

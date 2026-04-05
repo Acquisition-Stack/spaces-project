@@ -1,0 +1,99 @@
+{% extends "base.html" %} {% block title %}Coffee Spaces{% endblock %} {% block
+content %}
+<section
+  class="flex flex-col gap-10 text-surface-dark text-header bg-primary text-center py-8"
+>
+  <h1 class="text-8xl font-bold">Coffee Spaces ☕️</h1>
+  <p class="font-header text-md">
+    Study, Work or Relax In One Our Coffee Spaces
+  </p>
+</section>
+
+<section
+  class="px-28 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-50 mt-10 gap-20"
+>
+  <div class="room rounded-lg">
+    <a href="/space">
+      <img
+        class="w-full h-full object-cover rounded-t-lg"
+        src="{{ url_for('static', filename='images/cafe-tokyo-night.png') }}"
+      />
+      <div class="bg-surface py-5 px-4 rounded-b-lg">
+        <p class="text-primary font-bold font-body">Tokyo Night</p>
+        <p class="text-primary-mid font-bold">Lofi Hip Hop - 5 listening</p>
+        <p class="text-body text-white pt-2">
+          <span class="rounded-full bg-accent px-3 py-1">Live</span>
+        </p>
+      </div>
+    </a>
+  </div>
+  <div class="room rounded-lg">
+    <a href="google.com">
+      <img
+        class="w-full h-full object-cover rounded-t-lg"
+        src="{{ url_for('static', filename='images/beachfront-krabi.png') }}"
+      />
+      <div class="bg-surface py-5 px-4 rounded-b-lg">
+        <p class="text-primary font-bold font-body">Thai Beach House</p>
+        <p class="text-primary-mid font-bold">Lofi Hip Hop - 5 listening</p>
+        <p class="text-body text-white pt-2">
+          <span class="rounded-full bg-accent px-3 py-1">Live</span>
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <div class="room rounded-lg">
+    <img
+      class="w-full h-full object-cover rounded-t-lg"
+      src="{{ url_for('static', filename='images/cafe-image-london.png') }}"
+    />
+    <div class="bg-surface py-5 px-4 rounded-b-lg">
+      <p class="text-primary font-bold font-body">London House</p>
+      <p class="text-primary-mid font-bold">Lofi Hip Hop - 5 listening</p>
+      <p class="text-body text-white pt-2">
+        <span class="rounded-full bg-accent px-3 py-1">Live</span>
+      </p>
+    </div>
+  </div>
+  <div class="room rounded-lg">
+    <img
+      class="w-full h-full object-cover rounded-t-lg"
+      src="{{ url_for('static', filename='images/cafe-image-brazil.png') }}"
+    />
+    <div class="bg-surface py-5 px-4 rounded-b-lg">
+      <p class="text-primary font-bold font-body">Rio Rooftop</p>
+      <p class="text-primary-mid font-bold">Lofi Hip Hop - 5 listening</p>
+      <p class="text-body text-white pt-2">
+        <span class="rounded-full bg-accent px-3 py-1">Live</span>
+      </p>
+    </div>
+  </div>
+  <div class="room rounded-lg">
+    <img
+      class="w-full h-full object-cover rounded-t-lg"
+      src="{{ url_for('static', filename='images/cafe-image-japan.png') }}"
+    />
+    <div class="bg-surface py-5 px-4 rounded-b-lg">
+      <p class="text-primary font-bold font-body">Kyoto Evening</p>
+      <p class="text-primary-mid font-bold">Lofi Hip Hop - 5 listening</p>
+      <p class="text-body text-white pt-2">
+        <span class="rounded-full bg-accent px-3 py-1">Live</span>
+      </p>
+    </div>
+  </div>
+  <div class="room rounded-lg">
+    <img
+      class="w-full h-full object-cover rounded-t-lg"
+      src="{{ url_for('static', filename='images/cafe-image-riverside-vietnam.png') }}"
+    />
+    <div class="bg-surface py-5 px-4 rounded-b-lg">
+      <p class="text-primary font-bold font-body">Riverside Vietnam</p>
+      <p class="text-primary-mid font-bold">Lofi Hip Hop - 5 listening</p>
+      <p class="text-body text-white pt-2">
+        <span class="rounded-full bg-accent px-3 py-1">Live</span>
+      </p>
+    </div>
+  </div>
+</section>
+{% endblock %}
