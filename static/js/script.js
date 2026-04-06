@@ -3,18 +3,28 @@ var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 document.head.appendChild(tag);
 
+var player;
+var isMuted = false;
+
 //Hide YouTube Player
-function onYouTubeIframeAPIready() {
+function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
     height: "0",
     width: "0",
+    videoId: "OO2kPK5-qno",
     playerVars: {
-      listType: "playlist",
-      list: "RDuxRRuHH4po8",
       autoplay: 1,
-    },
-    events: {
-      onStateChange: onPlayerStateChange,
     },
   });
 }
+
+//Mute Youtube Player
+document.querySelector(".mute-button").addEventListener("click", () => {
+  if (isMuted) {
+    player.unMute();
+    isMuted = false;
+  } else {
+    player.mute();
+    isMuted = true;
+  }
+});
